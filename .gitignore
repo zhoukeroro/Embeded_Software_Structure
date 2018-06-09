@@ -38,6 +38,9 @@
 
 # Debug files
 *.dSYM/
+
+template/src/lib
+template/template.si4project
 *.su
 *.idb
 *.pdb
