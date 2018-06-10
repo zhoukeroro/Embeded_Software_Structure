@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f103.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   STM32f103 interface functions.
   * @modification history
   *  Data                Name                  Description
@@ -19,6 +19,9 @@
 
 #ifndef __STM32F103_H__
 #define __STM32F103_H__
+
+
+#include "type_def.h"
 
 
 void stm32f103_init(void);

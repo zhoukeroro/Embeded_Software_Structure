@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    user_hal_timer.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User hardware abstract layer TIMER drivers.
   * @modification history
   *  Data                Name                  Description
@@ -33,6 +33,10 @@ typedef enum
 
 USER_HAL_StatusTypeDef user_hal_timer_init(USER_TIMER_TypeDef timer);
 USER_HAL_StatusTypeDef user_hal_timer_deInit(USER_TIMER_TypeDef timer);
+
+USER_HAL_StatusTypeDef user_hal_timer_stop(USER_TIMER_TypeDef timer);
+USER_HAL_FlagTypeDef user_hal_timer_getITFlag(USER_TIMER_TypeDef timer);
+USER_HAL_StatusTypeDef user_hal_timer_clearITFlag(USER_TIMER_TypeDef timer);
 
 
 #endif

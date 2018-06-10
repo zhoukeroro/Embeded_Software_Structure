@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    user_hal_i2c.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User hardware abstract layer I2C drivers.
   * @modification history
   *  Data                Name                  Description
@@ -34,6 +34,10 @@ typedef enum
 USER_HAL_StatusTypeDef user_hal_i2c_init(USER_I2C_TypeDef i2c);
 USER_HAL_StatusTypeDef user_hal_i2c_deInit(USER_I2C_TypeDef i2c);
 
+USER_HAL_StatusTypeDef user_hal_i2c_StartSignal(USER_I2C_TypeDef i2c);
+USER_HAL_StatusTypeDef user_hal_i2c_StopSignal(USER_I2C_TypeDef i2c);
+USER_HAL_StatusTypeDef user_hal_i2c_SendOneByte(USER_I2C_TypeDef i2c, U8 data);
+U8 user_hal_i2c_RecvOneByte(USER_I2C_TypeDef i2c, USER_HAL_StatusTypeDef ack);
 
 
 #endif

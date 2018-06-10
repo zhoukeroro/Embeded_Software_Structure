@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    user_hal_crc.c
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User hardware abstract layer CRC drivers.
   * @modification history
   *  Data                Name                  Description

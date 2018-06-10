@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    mcu.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   Abstract MCU interface driver.
   * @modification history
   *  Data                Name                  Description
@@ -19,6 +19,9 @@
 
 #ifndef __MCU_H__
 #define __MCU_H__
+
+
+#include "type_def.h"
 
 
 void mcu_init(void);

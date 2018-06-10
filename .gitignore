@@ -41,6 +41,10 @@
 
 template/src/lib
 template/template.si4project
+template/MDK-ARM/makefiles
+template/MDK-ARM/DebugConfig
+template/MDK-ARM/*.uvoptx
+template/MDK-ARM/*.uvguix.*
 *.su
 *.idb
 *.pdb

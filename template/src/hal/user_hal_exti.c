@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    user_hal_exti.c
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User hardware abstract layer EXTI drivers.
   * @modification history
   *  Data                Name                  Description
@@ -65,9 +65,9 @@ USER_HAL_StatusTypeDef user_hal_exti_deInit(USER_EXTI_TypeDef exti)
 }
 
 
-USER_HAL_ITStatusTypeDef user_hal_exti_getITFlag(USER_EXTI_TypeDef exti)
+USER_HAL_FlagTypeDef user_hal_exti_getITFlag(USER_EXTI_TypeDef exti)
 {
-    USER_HAL_ITStatusTypeDef status = USER_HAL_RESET;
+    USER_HAL_FlagTypeDef flag = USER_HAL_RESET;
     
     switch (exti)
     {
@@ -83,7 +83,7 @@ USER_HAL_ITStatusTypeDef user_hal_exti_getITFlag(USER_EXTI_TypeDef exti)
             break;
     }
 
-    return status;
+    return flag;
 }
 
 

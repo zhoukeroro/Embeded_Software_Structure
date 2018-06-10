@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    user_hal_exti.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User hardware abstract layer EXTI drivers.
   * @modification history
   *  Data                Name                  Description
@@ -33,7 +33,8 @@ typedef enum
 
 USER_HAL_StatusTypeDef user_hal_exti_init(USER_EXTI_TypeDef exti);
 USER_HAL_StatusTypeDef user_hal_exti_deInit(USER_EXTI_TypeDef exti);
-USER_HAL_ITStatusTypeDef user_hal_exti_getITFlag(USER_EXTI_TypeDef exti);
+
+USER_HAL_FlagTypeDef user_hal_exti_getITFlag(USER_EXTI_TypeDef exti);
 USER_HAL_StatusTypeDef user_hal_exti_clearITFlag(USER_EXTI_TypeDef exti);
 
 

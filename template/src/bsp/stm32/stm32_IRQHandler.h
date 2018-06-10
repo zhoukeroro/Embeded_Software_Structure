@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32_IRQHandler.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   STM32f103 interrupt service routines.
   * @modification history
   *  Data                Name                  Description

@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    user_hal_dac.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User hardware abstract layer DAC drivers.
   * @modification history
   *  Data                Name                  Description
@@ -33,6 +33,7 @@ typedef enum
 
 USER_HAL_StatusTypeDef user_hal_dac_init(USER_DAC_TypeDef dac);
 USER_HAL_StatusTypeDef user_hal_dac_deInit(USER_DAC_TypeDef dac);
+
 USER_HAL_StatusTypeDef user_hal_dac_setValue(USER_DAC_TypeDef dac, U32 data);
 
 

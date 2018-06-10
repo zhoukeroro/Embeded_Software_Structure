@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    application.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User application.
   * @modification history
   *  Data                Name                  Description

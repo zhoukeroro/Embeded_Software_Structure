@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    board.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   Board layer device drivers.
   * @modification history
   *  Data                Name                  Description
@@ -19,6 +19,9 @@
 
 #ifndef __BOARD_H__
 #define __BOARD_H__
+
+
+#include "type_def.h"
 
 
 void board_init(void);

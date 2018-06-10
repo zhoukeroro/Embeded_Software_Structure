@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    type_def.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   standard variable types.
   * @modification history
   *  Data                Name                  Description

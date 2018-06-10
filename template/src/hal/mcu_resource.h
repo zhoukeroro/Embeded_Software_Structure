@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    mcu_resource.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   MCU resource assignment for current project, including pin resource 
              assignment and peripherals resource assignment.
   * @modification history

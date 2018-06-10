@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f103.c
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   STM32f103 interface functions.
   * @modification history
   *  Data                Name                  Description

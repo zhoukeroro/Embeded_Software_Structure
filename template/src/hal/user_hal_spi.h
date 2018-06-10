@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    user_hal_spi.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User hardware abstract layer SPI drivers.
   * @modification history
   *  Data                Name                  Description
@@ -33,6 +33,15 @@ typedef enum
 
 USER_HAL_StatusTypeDef user_hal_spi_init(USER_SPI_TypeDef spi);
 USER_HAL_StatusTypeDef user_hal_spi_deInit(USER_SPI_TypeDef spi);
+
+USER_HAL_StatusTypeDef user_hal_spi_nss_low(USER_SPI_TypeDef spi);
+USER_HAL_StatusTypeDef user_hal_spi_nss_high(USER_SPI_TypeDef spi);
+
+U8 user_hal_spi_SendOneByte(USER_SPI_TypeDef spi, U8 data);
+U8 user_hal_spi_ReadOneByte(USER_SPI_TypeDef spi);
+
+USER_HAL_FlagTypeDef user_hal_spi_GetSendStatus(USER_SPI_TypeDef spi);
+USER_HAL_FlagTypeDef user_hal_spi_GetBusStatus(USER_SPI_TypeDef spi);
 
 
 #endif

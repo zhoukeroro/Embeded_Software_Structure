@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    board.c
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   Board layer device drivers.
   * @modification history
   *  Data                Name                  Description

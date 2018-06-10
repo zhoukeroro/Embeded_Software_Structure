@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    user_hal.h
   * @author  William Zhou
-  * @version V0.1.0
+  * @version V0.1.1
   * @brief   User hardware abstract layer drivers.
   * @modification history
   *  Data                Name                  Description
@@ -33,7 +33,7 @@ typedef enum
 {
     USER_HAL_RESET = 0,
     USER_HAL_SET = !USER_HAL_RESET
-} USER_HAL_ITStatusTypeDef;
+} USER_HAL_FlagTypeDef;
 
 #include "type_def.h"
 #include "mcu_resource.h"
