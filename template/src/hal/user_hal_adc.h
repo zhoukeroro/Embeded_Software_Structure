@@ -16,12 +16,8 @@
   ******************************************************************************
   */
 
-
 #ifndef __USER_HAL_ADC_H__
 #define __USER_HAL_ADC_H__
-
-
-#include "user_hal.h"
 
 
 typedef enum

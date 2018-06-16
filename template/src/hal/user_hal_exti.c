@@ -16,19 +16,27 @@
   ******************************************************************************
   */
 
-
-#include "user_hal_exti.h"
 #include "user_hal.h"
 
 
 USER_HAL_StatusTypeDef user_hal_exti_init(USER_EXTI_TypeDef exti)
 {
     USER_HAL_StatusTypeDef status = USER_HAL_OK;
+    GPIO_InitTypeDef  GPIO_InitStruct;
     
     switch (exti)
     {
         case USER_EXTI_INSTANCE0:
-            //user code ...           
+            EXAMPLE_EXTI0_GPIO_CLK_ENABLE();
+            GPIO_InitStruct.Pin = EXAMPLE_EXTI0_PIN;
+            GPIO_InitStruct.Pull = GPIO_NOPULL;
+            GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
+            GPIO_InitStruct.Mode   = GPIO_MODE_IT_FALLING; 
+            HAL_GPIO_Init(EXAMPLE_EXTI0_GPIO_PORT, &GPIO_InitStruct);
+
+            /* Enable and set Button EXTI Interrupt to the lowest priority */
+            HAL_NVIC_SetPriority(EXAMPLE_EXTI0_EXTI_IRQn, 0x0F, 0);
+            HAL_NVIC_EnableIRQ(EXAMPLE_EXTI0_EXTI_IRQn);
             break;
             
         case USER_EXTI_INSTANCE1:
@@ -50,7 +58,7 @@ USER_HAL_StatusTypeDef user_hal_exti_deInit(USER_EXTI_TypeDef exti)
     switch (exti)
     {
         case USER_EXTI_INSTANCE0:
-            //user code ...           
+            HAL_GPIO_DeInit(EXAMPLE_EXTI0_GPIO_PORT, EXAMPLE_EXTI0_PIN);
             break;
             
         case USER_EXTI_INSTANCE1:

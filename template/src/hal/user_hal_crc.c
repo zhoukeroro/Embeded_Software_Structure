@@ -16,8 +16,6 @@
   ******************************************************************************
   */
 
-
-#include "user_hal_crc.h"
 #include "user_hal.h"
 
 
@@ -73,6 +71,5 @@ U32 user_hal_getValue(USER_CRC_TypeDef crc, U32 pBuffer[], U32 length)
 
     return crcValue;
 }
-
 
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

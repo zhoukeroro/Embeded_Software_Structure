@@ -1,9 +1,9 @@
 /**
   ******************************************************************************
-  * @file    user_hal_usb.h
+  * @file    user_macro.h
   * @author  William Zhou
   * @version V0.1.1
-  * @brief   User hardware abstract layer USB drivers.
+  * @brief   Useful macro function.
   * @modification history
   *  Data                Name                  Description
   *  ================    ==================    =================================
@@ -16,19 +16,8 @@
   ******************************************************************************
   */
 
-#ifndef __USER_HAL_USB_H__
-#define __USER_HAL_USB_H__
-
-
-typedef enum
-{
-    USER_USB_INSTANCE0 = 0,
-    USER_USB_INSTANCE_NUM
-}USER_USB_TypeDef;
-
-
-USER_HAL_StatusTypeDef user_hal_usb_init(USER_USB_TypeDef usb);
-USER_HAL_StatusTypeDef user_hal_usb_deInit(USER_USB_TypeDef usb);
+#ifndef __USER_MACRO_H__
+#define __USER_MACRO_H__
 
 
 #endif

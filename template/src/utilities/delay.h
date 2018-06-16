@@ -16,12 +16,8 @@
   ******************************************************************************
   */
 
-
 #ifndef __DELAY_H__
 #define __DELAY_H__
-
-
-#include "type_def.h"
 
 
 void Delay1us(void);

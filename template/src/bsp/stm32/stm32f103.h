@@ -16,16 +16,11 @@
   ******************************************************************************
   */
 
-
 #ifndef __STM32F103_H__
 #define __STM32F103_H__
-
-
-#include "type_def.h"
 
 
 void stm32f103_init(void);
 
 #endif
-
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

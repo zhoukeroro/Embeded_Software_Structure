@@ -16,12 +16,9 @@
   ******************************************************************************
   */
 
-
 #ifndef __USER_HAL_SPI_H__
 #define __USER_HAL_SPI_H__
 
-
-#include "user_hal.h"
 
 typedef enum
 {
@@ -43,6 +40,7 @@ U8 user_hal_spi_ReadOneByte(USER_SPI_TypeDef spi);
 USER_HAL_FlagTypeDef user_hal_spi_GetSendStatus(USER_SPI_TypeDef spi);
 USER_HAL_FlagTypeDef user_hal_spi_GetBusStatus(USER_SPI_TypeDef spi);
 
+USER_HAL_StatusTypeDef user_hal_spi_TransmitReceive(USER_SPI_TypeDef spi, U8 aTxBuffer[], U8 aRxBuffer[], U16 size);
 
 #endif
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

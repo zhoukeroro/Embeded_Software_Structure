@@ -16,24 +16,19 @@
   ******************************************************************************
   */
 
-
-#include "mcu.h"
-#include "board.h"
-#include "printer.h"
-#include "application.h"
+#include "platform.h"
 
 int main(void)
 {
     mcu_init();
     board_init();
     printer_init();
+    
     application_init();
-
 	while (1)
 	{
 	    application_loop();
 	}
 }
-
 
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

@@ -16,7 +16,6 @@
   ******************************************************************************
   */
 
-
 #ifndef __USER_HAL_H__
 #define __USER_HAL_H__
 
@@ -35,7 +34,8 @@ typedef enum
     USER_HAL_SET = !USER_HAL_RESET
 } USER_HAL_FlagTypeDef;
 
-#include "type_def.h"
+
+#include "platform.h"
 #include "mcu_resource.h"
 #include "user_hal_adc.h"
 #include "user_hal_crc.h"
@@ -50,6 +50,6 @@ typedef enum
 #include "user_hal_usart.h"
 #include "user_hal_usb.h"
 
-#endif
 
+#endif
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

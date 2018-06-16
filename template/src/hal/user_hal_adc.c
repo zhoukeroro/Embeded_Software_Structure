@@ -16,8 +16,7 @@
   ******************************************************************************
   */
 
-
-#include "user_hal_adc.h"
+#include "user_hal.h"
 
 
 USER_HAL_StatusTypeDef user_hal_adc_init(USER_ADC_TypeDef adc)
@@ -83,6 +82,5 @@ U32 user_hal_adc_getValue(USER_ADC_TypeDef adc)
 
     return adcValue;
 }
-
 
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

@@ -16,12 +16,9 @@
   ******************************************************************************
   */
 
-
 #ifndef __USER_HAL_RTC_H__
 #define __USER_HAL_RTC_H__
 
-
-#include "user_hal.h"
 
 typedef enum
 {

@@ -16,8 +16,6 @@
   ******************************************************************************
   */
 
-
-#include "user_hal_usb.h"
 #include "user_hal.h"
 
 
@@ -55,6 +53,5 @@ USER_HAL_StatusTypeDef user_hal_usb_deInit(USER_USB_TypeDef usb)
 
     return status;
 }
-
 
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

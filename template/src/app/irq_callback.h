@@ -16,11 +16,11 @@
   ******************************************************************************
   */
 
-
 #ifndef __IRQ_CALLBACK_H__
 #define __IRQ_CALLBACK_H__
 
 
+void xxxx_callback(void);
 
 
 #endif

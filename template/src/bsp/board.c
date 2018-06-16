@@ -16,9 +16,7 @@
   ******************************************************************************
   */
 
-
-#include "board.h"
-#include "user_hal.h"
+#include "platform.h"
 
 
 void board_init(void)

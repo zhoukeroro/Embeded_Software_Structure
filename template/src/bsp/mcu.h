@@ -16,16 +16,11 @@
   ******************************************************************************
   */
 
-
 #ifndef __MCU_H__
 #define __MCU_H__
 
 
-#include "type_def.h"
-
-
-void mcu_init(void);
+void mcu_init(void);    
 
 #endif
-
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

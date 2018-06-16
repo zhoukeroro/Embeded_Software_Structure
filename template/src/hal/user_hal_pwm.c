@@ -16,8 +16,6 @@
   ******************************************************************************
   */
 
-
-#include "user_hal_pwm.h"
 #include "user_hal.h"
 
 USER_HAL_StatusTypeDef user_hal_pwm_init(USER_PWM_TypeDef pwm)

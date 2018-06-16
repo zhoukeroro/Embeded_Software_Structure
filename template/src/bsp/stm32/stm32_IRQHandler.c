@@ -16,10 +16,9 @@
   ******************************************************************************
   */
 
+#include "platform.h"
 
-#include "stm32_IRQHandler.h"
-
-
+extern TIM_HandleTypeDef    TimHandle;
 /******************************************************************************/
 /*            Cortex-M3 Processor Exceptions Handlers                         */
 /******************************************************************************/
@@ -134,9 +133,14 @@ void SysTick_Handler(void)
   * @param  None
   * @retval None
   */
-void xxx_Handler(void)
+void EXAMPLE_EXTI0_EXTI_IRQHandler(void)
 {
-    
+    HAL_GPIO_EXTI_IRQHandler(EXAMPLE_EXTI0_PIN);
+}
+
+void EXAMPLE_TIMER0_IRQHandler(void)
+{
+    HAL_TIM_IRQHandler(&TimHandle);
 }
 
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

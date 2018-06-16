@@ -16,13 +16,8 @@
   ******************************************************************************
   */
 
-
 #ifndef __PRINTER_H__
 #define __PRINTER_H__
-
-
-#include "stdio.h"
-#include "type_def.h"
 
 
 //Uncomment this macro if there is no need to user debug printer

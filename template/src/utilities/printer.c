@@ -16,9 +16,8 @@
   ******************************************************************************
   */
 
-
-#include "printer.h"
-#include "user_hal.h"
+#include "platform.h"
+#include "stdio.h"
 
 
 #ifdef PRINTER_ENALBE
@@ -36,6 +35,5 @@ void printer_init(void)
     user_hal_usart_init(USER_USART_INSTANCE0);
 #endif
 }
-
 
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

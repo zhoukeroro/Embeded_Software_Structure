@@ -16,12 +16,9 @@
   ******************************************************************************
   */
 
-
 #ifndef __USER_HAL_I2C_H__
 #define __USER_HAL_I2C_H__
 
-
-#include "user_hal.h"
 
 typedef enum
 {
@@ -38,6 +35,9 @@ USER_HAL_StatusTypeDef user_hal_i2c_StartSignal(USER_I2C_TypeDef i2c);
 USER_HAL_StatusTypeDef user_hal_i2c_StopSignal(USER_I2C_TypeDef i2c);
 USER_HAL_StatusTypeDef user_hal_i2c_SendOneByte(USER_I2C_TypeDef i2c, U8 data);
 U8 user_hal_i2c_RecvOneByte(USER_I2C_TypeDef i2c, USER_HAL_StatusTypeDef ack);
+
+USER_HAL_StatusTypeDef user_hal_i2c_Transmit(USER_I2C_TypeDef i2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size);
+USER_HAL_StatusTypeDef user_hal_i2c_Receive(USER_I2C_TypeDef i2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size);
 
 
 #endif

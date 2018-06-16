@@ -16,7 +16,12 @@
   ******************************************************************************
   */
 
+#include "platform.h"
 
-#include "irq_callback.h"
+
+void xxxx_callback(void)
+{
+
+}
 
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

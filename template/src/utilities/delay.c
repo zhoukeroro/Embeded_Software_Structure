@@ -16,8 +16,9 @@
   ******************************************************************************
   */
 
-
+#include "type_def.h"
 #include "delay.h"
+
 
 //Under macro values depending on MCU frequency.
 #define ONE_US_LOOP_TIMES   (9U)
@@ -56,6 +57,5 @@ void DelayNms(U16 ms)
 
     for (cnt = 0; cnt < loopTimes; cnt++);
 }
-
 
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/

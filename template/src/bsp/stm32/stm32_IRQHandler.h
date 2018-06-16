@@ -16,7 +16,6 @@
   ******************************************************************************
   */
 
-
 #ifndef __STM32_IRQ_HANDLER_H__
 #define __STM32_IRQ_HANDLER_H__
 
@@ -33,5 +32,4 @@ void SysTick_Handler(void);
 
 
 #endif
-
 /************ Copyright (c) 2018 William Zhou. All rights reserved. ***********/
